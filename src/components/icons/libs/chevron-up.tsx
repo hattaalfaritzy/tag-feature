@@ -1,0 +1,18 @@
+import type { ISvgProps } from "../_icon";
+import { convertSizes } from "@/utils/convert-sizes";
+
+export default function ChevronUp({ width = 20, ...props }: ISvgProps) {
+  const sizes = convertSizes(width);
+  return (
+    <svg
+      width={sizes}
+      height={sizes}
+      {...props}
+      fill="none"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6l-6 6z" />
+    </svg>
+  );
+}
