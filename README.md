@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Merkle Innovation - Assessment Test
+ This project was created as part of the code test for Ezclass's Frontend Engineer role. The application was built using the Next.js framework and other modern tools.
 
-## Getting Started
+## 🚀 Getting Started
 
-First, run the development server:
+1. **Setting up the Environment.**
+Before starting the development server, ensure you have set up the necessary environment variables. Create a .env.local file in the root of the project and add:
+```
+NEXT_PUBLIC_API_BASE_URL = https://tag-feature-hatta.free.beeceptor.com
+```
 
-```bash
+2. **Running the Development Server**
+Start the development server using:
+```
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
+Once started, open http://localhost:3000 with your browser to see the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📚 Script
+- `pnpm dev` - Run development mode
+- `pnpm build` - Build the application for production
+- `pnpm start` - Start a Next.js production server (require pnpm build first)
+- `pnpm lint` - Linting the code [ESLint](https://eslint.org/)
+- `pnpm lint:fix` - Auto-fixing linting issues
+- `pnpm format` - Format the code [Prettier](https://prettier.io/)
+- `pnpm format:fix` - Auto-fixing format prettier issues
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Tools and Libraries
+This project uses a range of modern libraries and tools:
+- **Next.js**: The core framework.
+- **Axios**: Promise-based HTTP client for making API requests.
+- **react-query (useQuery)**: Data fetching and caching for better API performance.
+- **TailwindCSS**: A utility-first CSS framework for rapid UI development.
+- **React Hook Form**: Efficient form management
+- **yup**: Object schema validation.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## File Structure
 
-## Learn More
+```raw
+.
+├── 📂 public/                   Public files (e.g. favicon, images, robots.txt).
+├── 📂 src/
+│   ├── ⚛️ app/                   Next.js page components and routing logic.
+│   ├── ⚛️ components/
+│   │   ├── ⚛️ commons/           Common reusable UI components (e.g. buttons, inputs).
+│   │   └── ⚛️ sections/          Section-based components for specific pages or features.
+│   ├── 📂 config/               The configuration for the application (e.g., global settings, constants).
+│   │   └── 📂 api/               API request handlers and client-side API utilities.
+│   ├── 📂 styles/                Styling files for the project.
+│   │   └── index.css             The main CSS file containing TailwindCSS setup and global styles.
+│   ├── 📂 types/                 TypeScript type definitions for the application.
+│   ├── 📂 utils/                 Utility functions and helpers.
+├── .env.example                 Example environment variables for configuration.
+├── .gitignore                    Specifies files and directories to be ignored by Git.
+├── .prettierignore               Files and directories to be ignored by Prettier formatting.
+├── .prettierrc.json              Configuration file for Prettier code formatting rules.
+├── .eslint.config.mjs            ESLint configuration for linting JavaScript and TypeScript code.
+├── .next-env.d.ts                TypeScript environment definitions for Next.js.
+├── next.config.js                Configuration file for Next.js settings.
+├── package.json                  Project metadata, dependencies, and scripts.
+├── pnpm-lock.yaml                Dependency lockfile for pnpm, ensuring package consistency.
+├── README.md                     Documentation about the project.
+└── tsconfig.json                 TypeScript configuration for type checking and compilation.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notes:
+📂: Folder  
+⚛️: React-related folder  
