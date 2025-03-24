@@ -1,5 +1,4 @@
 import type { ComponentType, MouseEventHandler, SVGAttributes } from "react";
-
 import Activity from "./libs/activity";
 import BrokenImage from "./libs/broken-image";
 import BusMarker from "./libs/bus-marker";
@@ -12,35 +11,36 @@ import ChevronDown from "./libs/chevron-down";
 import ChevronLeft from "./libs/chevron-left";
 import ChevronRight from "./libs/chevron-right";
 import ChevronUp from "./libs/chevron-up";
-import CloseCircleOutline from "./libs/close-circle-outline";
 import CloseCircle from "./libs/close-circle";
+import CloseCircleOutline from "./libs/close-circle-outline";
 import Edit from "./libs/edit";
 import Error from "./libs/error";
-import EyeOutline from "./libs/eye-outline";
-import EyeSlashOutline from "./libs/eye-slash-outline";
-import EyeSlash from "./libs/eye-slash";
 import Eye from "./libs/eye";
+import EyeOutline from "./libs/eye-outline";
+import EyeSlash from "./libs/eye-slash";
+import EyeSlashOutline from "./libs/eye-slash-outline";
 import FileDownload from "./libs/file-download";
 import FileUpload from "./libs/file-upload";
 import FilterList from "./libs/filter-list";
 import Gear from "./libs/gear";
 import Home from "./libs/home";
-import InfoOutline from "./libs/info-outline";
 import Info from "./libs/info";
+import InfoOutline from "./libs/info-outline";
 import List from "./libs/list";
 import Loading from "./libs/loading";
 import LRT from "./libs/lrt";
 import Marker from "./libs/marker";
 import MRT from "./libs/mrt";
 import PaperClip from "./libs/paper-clip";
+import Plus from "./libs/plus";
 import Search from "./libs/search";
-import StoreMarker from "./libs/store-marker";
 import Store from "./libs/store";
+import StoreMarker from "./libs/store-marker";
 import Train from "./libs/train";
-import TrashOutline from "./libs/trash-outline";
 import Trash from "./libs/trash";
-import UserMultiple from "./libs/user-multiple";
+import TrashOutline from "./libs/trash-outline";
 import User from "./libs/user";
+import UserMultiple from "./libs/user-multiple";
 
 export interface ISvgProps extends SVGAttributes<SVGElement> {
   width?: number;
@@ -81,6 +81,7 @@ export type IconName =
   | "marker"
   | "mrt"
   | "paper-clip"
+  | "plus"
   | "search"
   | "store-marker"
   | "store"
@@ -126,6 +127,7 @@ export const icons: Record<string, IconComponent> = {
   marker: Marker,
   mrt: MRT,
   "paper-clip": PaperClip,
+  plus: Plus,
   search: Search,
   "store-marker": StoreMarker,
   store: Store,

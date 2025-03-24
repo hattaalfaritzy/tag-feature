@@ -1,8 +1,9 @@
-import { cn } from "@/utils/cn";
 import type { Metadata } from "next";
-import { POPPINS, ROBOTO_MONO } from "@/config/fonts";
 import { Toaster } from "react-hot-toast";
+import { POPPINS, ROBOTO_MONO } from "@/config/fonts";
+import { cn } from "@/utils/cn";
 import "@/styles/index.css";
+import { Providers } from "@/components/sections/providers";
 
 export const metadata: Metadata = {
   title: "Halu",
@@ -15,17 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={cn(
-        "scroll-smooth bg-red-200",
-        POPPINS.variable,
-        ROBOTO_MONO.variable
-      )}
-    >
-      <body className="flex flex-col w-screen max-w-screen h-full min-h-screen">
-        <Toaster />
-        {children}
+    <html lang="en" className={cn("scroll-smooth bg-light", POPPINS.variable, ROBOTO_MONO.variable)}>
+      <body className="flex flex-col items-center w-full h-full min-h-screen">
+        <div className="flex justify-center items-center max-w-2xl w-full p-20">
+          <Toaster />
+          <Providers>{children}</Providers>
+        </div>
       </body>
     </html>
   );

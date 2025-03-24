@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn";
-import { type IconName, type ISvgProps, icons } from "./_icon";
+import { icons, type IconName, type ISvgProps } from "./_icon";
 
 export interface IIconProps extends ISvgProps {
   className?: string;
@@ -11,16 +11,7 @@ export const Icons = ({ className, name, ...props }: IIconProps) => {
 
   if (!Component) return null;
 
-  return (
-    <Component
-      className={cn(
-        "fill-white",
-        name === "activity" && "stroke-white",
-        className
-      )}
-      {...props}
-    />
-  );
+  return <Component className={cn("fill-white", name === "activity" && "stroke-white", className)} {...props} />;
 };
 
 export { icons };

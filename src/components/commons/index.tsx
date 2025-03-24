@@ -1,5 +1,5 @@
 import Button from "./button";
-import Tag from "./tag";
 import Icons from "./icons";
+import Tag from "./tag";
 
 export { Button, Tag, Icons };

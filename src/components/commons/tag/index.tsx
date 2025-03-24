@@ -1,5 +1,5 @@
-import { cn } from "@/utils/cn";
 import { HTMLAttributes } from "react";
+import { cn } from "@/utils/cn";
 
 export interface ITagProps extends HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -9,14 +9,7 @@ export interface ITagProps extends HTMLAttributes<HTMLDivElement> {
   onClick?: () => void;
 }
 
-export const Tag = ({
-  className,
-  classNameLabel,
-  label,
-  variant = "error",
-  onClick,
-  ...props
-}: ITagProps) => {
+export const Tag = ({ className, classNameLabel, label, variant = "error", onClick, ...props }: ITagProps) => {
   if (!label) return null;
 
   const style = {
@@ -38,13 +31,7 @@ export const Tag = ({
       onClick={onClick}
       {...props}
     >
-      <div
-        className={cn(
-          "flex-1 text-xs",
-          variant === "light" ? "text-dark" : "text-white",
-          classNameLabel
-        )}
-      >
+      <div className={cn("flex-1 text-xs", variant === "light" ? "text-dark" : "text-white", classNameLabel)}>
         {label}
       </div>
     </div>

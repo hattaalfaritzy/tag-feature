@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: var(--font-roboto-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+
+  --text-xxxs: 0.5rem;
+  --text-xxs: 0.625rem;
+
+  --color-dark: oklch(0.14 0.01 0);
+
+  --color-light: oklch(0.94 0 270);
+
+  --color-informative: oklch(0.67 0.29 250);
+
+  --color-success: oklch(0.67 0.22 150);
+
+  --color-warning: oklch(0.67 0.29 50);
+
+  --color-error: oklch(0.67 0.29 30);
+}
