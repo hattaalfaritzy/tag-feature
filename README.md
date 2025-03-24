@@ -1,4 +1,4 @@
-# Merkle Innovation - Assessment Test
+# Ezclass - Code Test
  This project was created as part of the code test for Ezclass's Frontend Engineer role. The application was built using the Next.js framework and other modern tools.
 
 ## 🚀 Getting Started
